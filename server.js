@@ -1,4 +1,4 @@
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const express = require("express");
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
@@ -132,5 +132,5 @@ app.post("/image", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("DONE");
+  console.log(PORT);
 });
