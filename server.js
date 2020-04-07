@@ -6,7 +6,7 @@ var cors = require("cors");
 const saltRounds = 10;
 const myPlaintextPassword = "s0//P4$$w0rD";
 const someOtherPlaintextPassword = "not_bacon";
-var knex = require("knex")({
+const knex = require("knex")({
   client: "pg",
   connection: {
     connectionString: process.env.DATABASE_URL,
