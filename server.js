@@ -13,7 +13,7 @@ const knex = require("knex")({
     ssl: true,
   },
 });
-
+knex.connect();
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
