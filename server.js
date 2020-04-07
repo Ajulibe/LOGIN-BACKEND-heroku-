@@ -9,11 +9,8 @@ const someOtherPlaintextPassword = "not_bacon";
 var knex = require("knex")({
   client: "pg",
   connection: {
-    host: "postgresql-cubed-25592",
-    port: "4040",
-    user: "postgres",
-    password: "uchechi41",
-    database: "postgres",
+    connectionString: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
